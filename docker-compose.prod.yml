@@ -10,4 +10,12 @@ services:
         NODE_ENV: production
     environment:
       - NODE_ENV=production
-    command: npm start
+      - MONGO_USER=darula
+      - MONGO_PASSWORD=password
+      - SESSION_SECRET=secret
+    command: npm run dev
+
+  mongo-db:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=darula
+      - MONGO_INITDB_ROOT_PASSWORD=password
