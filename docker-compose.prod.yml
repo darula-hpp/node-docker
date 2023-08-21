@@ -13,7 +13,7 @@ services:
       - MONGO_USER=darula
       - MONGO_PASSWORD=password
       - SESSION_SECRET=secret
-    command: npm run dev
+    command: npm start
 
   mongo-db:
     environment:
